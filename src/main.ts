@@ -1,17 +1,14 @@
 import Vue from 'vue';
-// import { Lazyload } from 'vant';
-// import { Dialog } from 'vant';
 import App from './App.vue';
 import router from './router/index';
 import store from './store/index';
 import vant from './config/vant/index';
-Vue.config.productionTip = false;
-
+import './assets/style/index.less';
 // 使用有赞UI组件库
 Vue.use(vant);
-// Vue.use(Lazyload);
 
-// Vue.prototype.Dialog = Dialog;
+Vue.config.productionTip = false;
+
 new Vue({
   router,
   store,
