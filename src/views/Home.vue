@@ -7,17 +7,16 @@
         <img v-lazy="image" />
       </van-swipe-item>
     </van-swipe> -->
+    <van-field v-model="value" placeholder="请输入用户名" />
     <Hello /> 
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import Hello from '@/components/Hello.vue';
 @Component({
   components: {
-    HelloWorld,
     Hello,
   },
 })
@@ -28,6 +27,7 @@ export default class Home extends Vue {
         'https://img.yzcdn.cn/vant/apple-1.jpg',
         'https://img.yzcdn.cn/vant/apple-2.jpg',
       ],
+      value: '',
     };
   }
 }
