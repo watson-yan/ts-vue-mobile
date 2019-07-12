@@ -1,0 +1,110 @@
+@import './var.less';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+
+/* display */
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-none { display: none; }
+.d-flex { display: flex; } 
+/* postion */
+.position-relative { position: static; } 
+.position-relative { position: relative; } // 相对定位
+.position-absolute { position: absolute; } // 绝对定位
+.postion-fixed { position: fixed; } // 固定定位
+
+// padding & margin
+
+/* float */
+.float-left { float: left; } // 左浮动
+.float-right { float: right; } // 右浮动
+//  清除浮动
+.clearfix {    
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+/* text & font */
+.text-center { text-align: center; }   // 文字居中
+.text-left { text-align: left; } // 文字靠左
+.text-right { text-align: right; } // 文字靠右
+.text-nowrap { white-space: nowrap } // 文字不换行
+// 文字超出变成省略号
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.font-bold { font-weight: 600; }   // 粗字体
+.font-normal { font-weight: 400; } // 正常字体
+.font-light { font-weight: 300; } // 细字体
+.font-italic { font-style: italic; }  // 斜字体
+
+/* border & round */
+.boder { border: 1px solid @border-color; }
+.boder-top { border-top: 1px solid @border-color; }
+.boder-right { border: 1px solid @border-color; }
+.boder-bottom { border: 1px solid @border-color; }
+.boder-left { border: 1px solid @border-color; }
+
+// 设置容器圆角
+.rounded { border-radius: .25rem; }
+.rounded-top {
+  border-top-left-radius: .25rem !important;
+  border-top-right-radius: .25rem !important;
+}
+.rounded-right { 
+  border-top-right-radius: .25rem !important;
+  border-bottom-right-radius: .25rem !important;
+ }
+.rounded-bottom {
+  border-bottom-right-radius: .25rem !important;
+  border-bottom-left-radius: .25rem !important;
+}
+.rounded-left { 
+  border-top-left-radius: .25rem !important;
+  border-bottom-left-radius: .25rem !important;
+ }
+.rouned-circle { border-radius: 50% !important; }
+.rounded-0 { border-radius: 0; }
+
+
+/* shadow */
+.shadow { box-shadow: 0 8px 12px #ebedf0; }
+
+/* color */
+.text-primary { color: @primary; }
+.text-info { color: @info; }
+.text-warning { color: @warning; }
+.text-danger { color: @danger; }
+.text-dark { color: #343a40; }   // 类黑色 用于正文之类的
+.text-light { color: #f8f9fa; }  // 类白色 用于深色背景时
+.text-muted { color: #6c757d; }  // 用户次要信息展示，如作者、时间
+
+
+/* overflow */
+.overflow-hidden { overflow: hidden; }
+.overflow-auto { overflow: auto; }
+
+
+/* vertical-align */
+.align-middle { vertical-align: middle; }
+.align-top { vertical-align: top; }
+.align-bottom { vertical-align: bottom; }
+.align-baseline { vertical-align: baseline; }
+.align-text-top { vertical-align: text-top; }
+.align-text-bottom { vertical-align: text-bottom; }
+
+
+/* visible */
+.visible { visibility: visible; }
+.invisible { visibility: hidden; }
+
