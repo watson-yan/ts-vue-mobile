@@ -3,7 +3,12 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-size: 14px;
   background: #f8f8f8;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* display */
@@ -23,7 +28,7 @@ html, body {
 /* float */
 .float-left { float: left; } // 左浮动
 .float-right { float: right; } // 右浮动
-//  清除浮动
+//  清除浮动
 .clearfix {    
   &:after {
     display: block;
@@ -49,11 +54,11 @@ html, body {
 .font-italic { font-style: italic; }  // 斜字体
 
 /* border & round */
-.boder { border: 1px solid @border-color; }
-.boder-top { border-top: 1px solid @border-color; }
-.boder-right { border: 1px solid @border-color; }
-.boder-bottom { border: 1px solid @border-color; }
-.boder-left { border: 1px solid @border-color; }
+.boder { border: 1px solid @border-color; transform: scaleY(0.5);}
+.boder-top { border-top: 1px solid @border-color; transform: scaleY(0.5);}
+.boder-right { border: 1px solid @border-color; transform: scaleY(0.5);}
+.boder-bottom { border: 1px solid @border-color; transform: scaleY(0.5);}
+.boder-left { border: 1px solid @border-color; transform: scaleY(0.5);}
 
 // 设置容器圆角
 .rounded { border-radius: .25rem; }
@@ -107,4 +112,3 @@ html, body {
 /* visible */
 .visible { visibility: visible; }
 .invisible { visibility: hidden; }
-
